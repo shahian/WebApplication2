@@ -9,5 +9,6 @@ namespace WebApplication2
         {
             filters.Add(new HandleErrorAttribute());
         }
+
     }
 }
