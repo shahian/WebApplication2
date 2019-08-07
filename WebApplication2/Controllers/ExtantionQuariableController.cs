@@ -19,8 +19,10 @@ namespace WebApplication2.Controllers
             new User { Name = "Neel Beniwal", Id = 95 },
             new User { Name = "Chris Love", Id =15 }
         }.AsQueryable();
-            var fff=Users.First(x => x.Name == "");
-            var jjj=Users.ByUserName("Mahesh Chand");
+            var fff = Users.First(x => x.Name == "Chris Love");
+            var jjj = Users.ByUserName("Mahesh Chand").FirstOrDefault();
+
+            var persia = DateTime.Now.ConvertToPersian();
             return View();
         }
     }
