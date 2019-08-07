@@ -12,6 +12,7 @@ namespace WebApplication2.Controllers
         // GET: ExtantionQuariable
         public ActionResult Index()
         {
+
             var Users = new List<User>
         {
             new User { Name = "Mahesh Chand", Id = 5 },
